@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meteo WebAppApi</title>
+    <link rel="stylesheet" href="css-js/style.css">
+    <link rel="stylesheet" href="css-js/Bootstarp/css/bootstrap.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="shortcut icon" href="img/humidity.png" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Gabarito:wght@497&family=Pacifico&family=Poppins&family=Quicksand:wght@446&family=Roboto:wght@400;500;900&display=swap" rel="stylesheet">
+</head>
+    <body>
+        <!-- ========== Start Weather-Box Section ========== -->
+
+        <section class="container-fluid box-container-weather">
+            <div class="container box-weather">
+                    <div class="box-top-icons">
+                        <div class="form-btn d-flex">
+                            <button class="btn btn-top" id="btn-api"><i class="bi bi-filter-left"></i></button>
+                            <div class="api-inp-btn d-flex none" id="api-box">
+                                <input type="text" placeholder="Inserisci l'API..." id="text-api-id" class="form-control">
+                                <button id="btn-api-cof" class="btn">Add</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="result-show placeholder-glow">
+                        <h4 class="display-6 container-fluid placeholder" id="text-country">Milan, IT.</h4>
+                        <div class="img-rf placeholder">
+                            <div class="img-scroller" id="scroller">
+                                    <div class="img-cont">
+                                        <img src="img/clear.png" alt="meteo" draggable="false">
+                                    </div>
+                                    <div class="img-cont">
+                                        <img src="img/clouds.png" alt="meteo" draggable="false">
+                                    </div>
+                                    <div class="img-cont">
+                                        <img src="img/drizzle.png" alt="meteo" draggable="false">
+                                    </div>
+                                    <div class="img-cont">
+                                        <img src="img/mist.png" alt="meteo" draggable="false">
+                                    </div>
+                                    <div class="img-cont">
+                                        <img src="img/rain.png" alt="meteo" draggable="false">
+                                    </div>
+                                    <div class="img-cont">
+                                        <img src="img/snow.png" alt="meteo" draggable="false">
+                                    </div>
+                            </div>
+                        </div>
+                        <div class="text-info">
+                            <h2 id="unit-grad" class="placeholder">29 °C</h2>
+                            <p id="text-temp" class="placeholder">Cielo Sereno.</p>
+                        </div>
+                    </div>
+                    <div class="info-bottom-info placeholder-glow">
+                        <div class="bottom-info-box">
+                            <div class="cn-img-bt  placeholder">
+                                <img src="img/humidity.png" alt="hum" draggable="false">
+                            </div>
+                            <p id="text-hum" class=" placeholder">53 %</p>
+                        </div>
+                        <div class="bottom-info-box">
+                            <div class="cn-img-bt placeholder">
+                                <img src="img/wind.png" alt="wind" draggable="false">
+                            </div>
+                            <p id="text-wind" class="placeholder">55.6 km/h</p>
+                        </div>
+                    </div>
+                <div class="search-box">
+                    <input type="text" class="input-weather-sr" id="search-box" placeholder="Italia,It...">
+                    <button class="btn btn-search" id="btn-src"><i class="bi bi-search"></i></button>
+                </div>
+            </div>
+            <div class="alert alert-primary" role="alert" id="error-box"></div>
+          </div>
+            <nav class="container-fluid none cont-box-warn" id="warn-ab-box">
+                <div class="container-sm d-flex box-warn none" id="box-warn">
+                    <span class="container-fluid d-flex box-text-wr">
+                        <h3>Nota Importante!!</h3>
+                        <p>Se vuoi utilizzare questa Applicazione devi usufruire della chiave API, andando sul sito 
+                            <a href="https://openweathermap.org/api/one-call-3" target="_blank">Open Weather API</a>, una volta registrati
+                            potete utilizzare la chiave Api corrispondente per utilizzarla.
+                        </p>
+                    </span>
+                    <span class="container-fluid d-flex box-btn-wr">
+                        <button id="btn-accepts" class="btn d-flex">Ok, Confermo di aver compreso.</button>
+                    </span>
+                </div>
+            </nav>
+        </section>
+        <!-- ========== End Weather-Box Section ========== -->
+        <script src="css-js/Bootstarp/js/bootstrap.bundle.js"></script>
+        <script src="css-js/Bootstarp/js/bootstrap.min.js"></script>
+        <script src="css-js/app.js"></script>
+    </body>
+</html>

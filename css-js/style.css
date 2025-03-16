@@ -1,0 +1,413 @@
+/***** Stile Generale della Pagina  *****/
+
+/* Reset CSS */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+    display: block;
+}
+
+body {
+    line-height: 1;
+}
+
+ol, ul {
+    list-style: none;
+}
+
+blockquote, q {
+    quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content: '';
+    content: none;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+::selection {
+    background: #CFC5C2;
+    color: #ffffff; 
+}
+
+/***** End CSS Reset *****/ 
+
+/***** Weather-Box Section Style *****/ 
+
+.container-fluid.box-container-weather{
+    background-color: #3E4042;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 110vh;
+}
+
+.container.box-weather{
+    width: 400px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-image: url("../img/bg_app.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 40px;
+    padding: 20px;
+    gap: 10px;
+    box-shadow: 0px 0px 20px 2px #121213;
+}
+
+.result-show h4{
+    font-family: "Poppins", serif;
+    font-weight: 600;
+    font-style: normal;
+    text-align: center;
+    text-transform: capitalize;
+    width: 100%;
+    color: #ECF0F3;
+    padding: 10px;
+}
+
+.box-top-icons{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: row;
+}
+
+.btn.btn-top{
+    border: 2px solid #ECF0F3;
+    height: 30px;
+    width: 30px;
+    display: flex;
+    font-size: 15px;
+    color: #ECF0F3;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.result-show{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.img-rf{
+    width: 100px;
+    height: 100px;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-direction: column;
+    mask-image: linear-gradient(to top,black 15%,transparent 100%);
+}
+
+.img-scroller{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-direction: column;
+    gap: 10px;
+    width: 100px;
+    transform: translateY(0%);
+    transition: all ease-in-out .90s;
+}
+
+.img-cont{
+    width: 100px;
+    height: 100px;
+}
+
+#text-temp{
+    text-transform: capitalize;
+}
+
+.img-cont img{
+    width: 100%;
+}
+
+.text-info{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 3px;
+    padding: 10px;
+}
+
+.text-info h2, .text-info p{
+    margin: 0;
+    font-family: "Poppins", serif;
+    font-weight: 700;
+    font-style: normal;
+    color: #ECF0F3;
+}
+
+.info-bottom-info{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    gap: 3px;
+    height: 70px;
+}
+
+.bottom-info-box{
+    width: 40%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-direction: row;
+    padding: 5px;
+    color: #ECF0F3;
+    gap: 9px;
+}
+
+.bottom-info-box p{
+    margin: 0;
+    font-family: "Poppins", serif;
+    font-weight: 600;
+    font-style: normal;
+}
+
+.cn-img-bt{
+    width: 30px;
+    height: 30px;
+}
+
+.cn-img-bt img{
+    width: 100%;
+}
+
+.search-box{
+    width: 100%;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    background-color: #ecf0f34d;
+    backdrop-filter: blur(60px);
+    border-radius: 100px;
+    padding: 0;
+    gap: 10px;
+}
+
+.input-weather-sr{
+    width: 70%;
+    outline: none;
+    padding: 7px;
+    text-transform: capitalize;
+    font-family: "Poppins", serif;
+    font-weight: 500;
+    font-style: normal;
+    border-radius: 10px;
+    border: none;
+}
+
+.btn.btn-search{
+    color: #ECF0F3;
+    width: 39px;
+    height: 39px;
+    font-size: 18px;
+    padding: 0;
+    filter: drop-shadow(0px 0px 4px #ECF0F3);
+}
+
+.btn.btn-search:hover{
+    color: #3E4042;
+    filter: drop-shadow(0px 0px 0px #3E4042);
+}
+
+ /***** Weather-Box Section Style End *****/
+
+/***** Error Message Box Style *****/
+
+#error-box{
+    border: 2px solid #ECF0F3;
+    position: fixed;
+    bottom:  0;
+    left: 0;
+    margin: 10px;
+    padding: 10px;
+    opacity: 0;
+    background-color: #3E4042;
+    color: #ECF0F3;
+    border-radius: 10px;
+    transition: all ease-in-out .90s;
+    align-items: center;
+    justify-content: flex-start;
+    flex-direction: row;
+    gap: 10px;
+    display: flex;
+}
+
+#error-box p{
+    font-size: 15px;
+    margin-bottom: 0;
+    text-transform: capitalize;
+    text-align: left;
+    font-weight: 500;
+}
+
+/***** Error Message Box Style End  *****/
+
+/***** Warn Message Box Style   *****/
+
+.container-fluid.cont-box-warn{
+    position: fixed;
+    height: 100vh;
+    top: 0;
+    display: flex;
+    background-color: #3e404223;
+    backdrop-filter: blur(20px);
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    animation-name: animation-opening-box;
+    animation-delay: .12ms;
+    animation-duration: .90s;
+    animation-timing-function: ease-in;
+}
+
+.container-fluid.cont-box-warn.none{
+    display: none;
+}
+
+.container-sm.d-flex.box-warn.none{
+    display: none;
+}
+
+.container-sm.d-flex.box-warn{
+    overflow: hidden;
+    align-items: center;
+    justify-content: flex-start;
+    background-color: #ECF0F3;
+    flex-direction: column;
+    font-family: "Poppins", serif;
+    padding: 20px;
+    border-radius: 20px;
+    animation-name: animation-opening-box;
+    animation-delay: 20s;
+    animation-duration: .90s;
+    animation-timing-function: ease-in;
+}
+
+@keyframes animation-opening-box {
+    0%{opacity: 0;}
+    100%{opacity: 100%;}
+}
+
+.container-fluid.d-flex.box-text-wr{
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 2px;
+    text-align: left;
+}
+
+.container-fluid.d-flex.box-text-wr h3{
+    font-weight: 700;
+    font-size: 30px;
+}
+
+.container-fluid.d-flex.box-text-wr p{
+    font-size: 17px;
+}
+
+.container-fluid.d-flex.box-text-wr p a{
+    font-weight: 700;
+    color: #121213;
+}
+
+.container-fluid.d-flex.box-btn-wr{
+    align-items: flex-start;
+    justify-items: center;
+}
+
+#btn-accepts{
+    background-color: #D7D7D9;
+    color: #818080;
+}
+
+.form-btn{
+    width: 100%;
+    position: relative;
+}
+
+.form-btn.left{
+    width: 100%;
+    position: relative;
+    justify-content: flex-end;
+}
+
+.api-inp-btn{
+    position: absolute;
+}
+
+.api-inp-btn{
+    width: 220px;
+    background-color: #ecf0f39b;
+    flex-direction: column;
+    padding: 10px;
+    top: 37px;
+    gap: 10px;
+    opacity: 100;
+    border-radius: 10px;
+    z-index: 100;
+    transition: all ease-in .10s;
+}
+
+.api-inp-btn.none{
+    opacity: 0;
+    z-index: -100;
+    transition: all ease-in .10s;
+}
+
+.api-inp-btn button{
+    background-color: #3E4042;
+    color: #ffffff;
+}
+
+.api-inp-btn button:hover{
+    background-color: #5f6163;
+    color: #ffffff;
+}
+
+/***** Warn Message Box Style End   *****/
