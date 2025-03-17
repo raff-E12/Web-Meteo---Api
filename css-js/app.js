@@ -9,11 +9,11 @@
         * 
         * @function HandleFetchDataApi - La funzione si occupa di comunicare con l'Api sulla possibile estrazione di dati.
         * 
-        * @function HandleTextWorkShow - La funzione si occupa di innettare le seguenti caratteristiche di ricerca, che servono attraverso l'api.
+        * @function HandleTextWorkShow - La funzione si occupa di innettare le seguenti caratteristiche di ricerca di testo, offerte dall'Api.
         * 
-        * @function HandleKeyInputProgram - La funzione si occupa di estrarre i valori in input per la relativa chiamata api.
+        * @function HandleKeyInputProgram - La funzione si occupa di estrarre il valore di input per la relativa chiave api da usare nella chiamata api.
         * 
-        * @function HandleWatherWorkIcon - La funzione si occupa della rappresentazione del meteo di ogni risultato, dettati dall'api.
+        * @function HandleWatherWorkIcon - La funzione si occupa della rappresentazione grafica di ricerca in base all'api.
      * 
      */
 
